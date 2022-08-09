@@ -1,0 +1,11 @@
+@media (max-width: 575){
+    img {
+        height: 6%;
+        width: 90%;
+    }
+    .top_contact a {
+        font-size: 13px;
+    }
+}
+
+/* Small devices media quiary  */

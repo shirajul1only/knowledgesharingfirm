@@ -1,0 +1,224 @@
+body{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.header_section{
+  background-image: url(/images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header_section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #808080a1;
+  height: 100%;
+  width: 100%;
+}
+/* Background & Overlap css end here  */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 82%;
+}
+.slide_content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  transform: translate(-50%, -50%);
+}
+.slide_content h6{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.slide_content h1{
+    color: #fff;
+    font-weight: 700;
+}
+.slide_content p{
+    color: #fff;
+}
+.slide_content p span {
+  font-weight: 700;
+  color: #ffff00;
+}
+
+/* about me section design  */
+.about_me_section{
+  margin: 7% 0;
+}
+.me_image{}
+.me_image img{
+  width: 100%;
+}
+.about_me_content {
+}
+.about_me_content h1{
+  font-weight: 700;
+  text-align: center;
+}
+.about_me_content h1{
+  position: relative;
+
+}
+.about_me_content h1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translate(-50%, -40%);
+  height: 3px;
+  width: 0;
+  transition: 0.4s all ease-in-out;
+}
+.about_me_content h1:hover::before {
+  background-color: #ff9500;
+  width: 15%;
+}
+.about_me_content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  transform: translate(-50%, -38%);
+  height: 3px;
+  width: 0;
+  transition: 0.4s all ease-in-out;
+}
+.about_me_content h1:hover::after {
+  background-color: #ff9500;
+  width: 15%;
+}
+.about_me_content p {
+}
+.about_me_content p span{
+  font-weight: 700;
+}
+/* Portfolio Design  */
+.our_service{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.our_service h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+.our_service h1::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: 0.4s all ease-in-out;
+}
+.our_service h1:hover::before{
+  background-color: #ff9500;
+  width: 47%;
+}
+.our_service h1::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  transition: 0.4s all ease-in-out;
+}
+.our_service h1:hover::after{
+  background-color: #ff9500;
+  width: 47%;
+}
+.portfolio_items {
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 1px 0px;
+  cursor: pointer;
+}
+.portfolio_items::before {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  left: 0;
+  top: 0;
+  background-color: #ff0000;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  opacity: 0;
+}
+.portfolio_items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 10px;
+  top: 0;
+  width: 10px;
+  border-top: 2px solid #ff9500;
+  border-left: 2px solid #ff9500;
+  opacity: 0;
+}
+
+.portfolio_items:hover::before {
+  opacity: 1;
+}
+.portfolio_items:hover::after {
+  opacity: 1;
+}
+.portfolio_items:hover::before {
+  opacity: 1;
+  background-color: #fff;
+}
+.portfolio_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio_items:hover{
+  background-color: #ff9500;
+}
+.portfolio_items:hover .portfolio_icon i{
+  background-color: #fff;
+}
+.portfolio_items:hover h4{
+  color: #fff;
+}
+.portfolio_items:hover p{
+  color: #fff;
+}
+.portfolio_icon i {
+  background: #ff9500;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.portfolio_items h4 {
+  margin: 15px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.portfolio_items p {
+  padding-bottom: 25px;
+}
+
+/* Service Section end here  */
